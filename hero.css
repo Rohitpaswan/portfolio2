@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    
+
+}
+
+#hero {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    border: 1px solid red;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.circle {
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid rgb(87, 149, 220); */
+    text-align: center;
+}
+
+.svgBox {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 34%;
+    left: 20%;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 7.8vw;
+    font-weight: 800;
+    line-height: 7.4vw;
+    padding: 0vw;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 6vw;
+}
+
+.s {
+    display: inline-block;
+    color: #000;
+}
+
+.hero-para {
+    /* border: 1px solid red; */
+    margin-bottom: 0;
+    overflow-y: hidden;
+    margin-bottom: 6px;
+    
+    /* border: 1px solid red; */
+
+}
+
+.hero-para span {
+    /* border: 1px solid #000; */
+    font-size: 1.6vw;
+    display: inline-block;
+    transform: translateY(100%);
+   
+    /* border: 1px solid #57bd91; */
+
+
+}
+
+#first {
+    margin-top: 1.2vw;
+    
+    
+}
+
+.heroParent{
+    /* border: 1px solid #eb13e7; */
+    height: fit-content;
+}
+
+
+.heroChild {
+
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* Adjustments for SVG circle responsiveness */
+@media (max-width: 1020px) {
+    .circle {
+        width: 90%;
+    }
+
+    .svgBox {
+        width: 80%;
+        height: 80%;
+    }
+.hero-para{
+    margin-bottom: 5vw;
+}
+    .hero-para span {
+
+        display: inline-block;
+        font-size: 1.1rem;
+        /* border: 1px solid #57bd91; */
+    }
+
+    #first {
+        margin-top: 2.1vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 90%;
+    }
+
+    .svgBox {
+        width: 100%;
+        height: 70%;
+        /* border: 1px solid saddlebrown; */
+    }
+
+    .hero-para span {
+
+        display: inline-block;
+        font-size: 1rem;
+        /* border: 1px solid #57bd91; */
+    }
+
+    #first {
+        margin-top: 5vw;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .circle {
+        width: 100%;
+    }
+
+    .svgBox {
+        max-width: 600px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .title {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 3vw;
+        text-align: left;
+        padding-left: 3vw;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .circle {
+        width: 90%;
+    }
+
+    .svgBox {
+        max-width: 700px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .title {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        border: 1px solid #000;
+
+
+    }
+}
